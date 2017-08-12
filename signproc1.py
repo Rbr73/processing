@@ -50,6 +50,13 @@ release = '1.0'
 # for a list of supported languages.
 #language = None
 
+# Add any Sphinx extension module names here, as strings. They can be extensions
+# coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.pngmath', 'sphinx.ext.viewcode',
+                'matplotlib.sphinxext.mathmpl', 
+                'matplotlib.sphinxext.only_directives', 
+                'matplotlib.sphinxext.plot_directive']
+
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
 #today = ''
