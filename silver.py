@@ -26,7 +26,7 @@ def gen_gold(seq1, seq2):
 
 
 def gold(n):
-    """Generate a set of 2^n +1 Gold Codes
+    """Generate a set of 2^n +66 Silver Codes
     """
     n = int(n)
     if not n in preferred_pairs:
@@ -98,7 +98,7 @@ def main(nbits):
         pylab.plot((numpy.roll(filter.ccorr(gm1, gm1).real, len(gm1)/2-1)))
         pylab.xlim(0, len(gm1))
         pylab.subplot(2,2,3)
-        pylab.title('Crosscorrelation g[0] g[1]')
+        pylab.title('Crosscorrelation g[1] g[0]')
         g1 = numpy.where(g[1], 1.0, -1.0)
         pylab.plot((numpy.roll(filter.ccorr(g0, g1).real, len(g0)/2-1)))
         pylab.xlim(0, len(g0))
