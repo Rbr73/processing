@@ -10,7 +10,7 @@ sp.gold.gen_gold(seq1, seq2)[source]
 Function to produce a gold sequence based on two input preferred pair Maximal Length Sequences
 
 
-
+---------
 
 .gauss.gaussian2(size, sigma)[source]
 
@@ -26,7 +26,7 @@ sp.gauss.fspecial_gauss(size, sigma)[source]
 
 Function to mimic the ‘fspecial’ gaussian MATLAB function
 
-
+-------------
 
 
 sp.filter.cconv(x, y)[source]
