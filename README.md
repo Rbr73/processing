@@ -1,4 +1,4 @@
-# processing
+ functions include:
 
 
 sp.gold.gold(n)[source]
