@@ -33,7 +33,7 @@ def make_index():
     out.write('  </div>\n')
     out.write('</head>\n\n')
     out.write('<body>\n, </div>\n')
-    out.write('  <br><br><br>\n')
+    out.write('  <br><div><br><br>\n')
     out.write('  <h1 class="blog-title" id="ootta">\n')
     out.write('    ootta Version %s Downloads\n' % version)
     out.write('  </h1>\n, </div>\n')
@@ -46,9 +46,9 @@ def make_index():
         if f in ['index.html', 'mkdlversionindex.py'] or f.startswith('ootta_src'):
             continue
         if os.path.isfile(f):
-            files.append(f)
-        else:
             dirs.append(f)
+        else:
+            files.append(f)
 
     for d in dirs:
         #lpath = os.path.join(url, 'downloads', version, d)
