@@ -41,7 +41,7 @@ pickle:
 	mkdir -p _build/pickle _build/doctrees
 	$(SPHINXBUILD) -b pickle $(ALLSPHINXOPTS) _build/pickle
 	@echo
-	@echo "Build finished; now you can process the pickle files."
+	@echo "Build finished; now you can process the first pickle files."
 
 web: pickle
 
@@ -49,7 +49,7 @@ json:
 	mkdir -p _build/json _build/doctrees
 	$(SPHINXBUILD) -b json $(ALLSPHINXOPTS) _build/json
 	@echo
-	@echo "Build finished; now you can process the JSON files."
+	@echo "Build finished; now you can process all files."
 
 htmlhelp:
 	mkdir -p _build/htmlhelp _build/doctrees
@@ -76,7 +76,7 @@ linkcheck:
 	mkdir -p _build/linkcheck _build/doctrees
 	$(SPHINXBUILD) -b linkcheck $(ALLSPHINXOPTS) _build/linkcheck
 	@echo
-	@echo "Link check complete; look for any errors in the above output " \
+	@echo "Link check complete; look for any errors in complete output " \
 	      "or in _build/linkcheck/output.txt."
 	      
 pdf:
