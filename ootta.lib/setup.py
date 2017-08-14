@@ -48,11 +48,11 @@ Component, Driver, Variable and other plugins for oottaDAO
           'oottadao.main',
           'Pyevolve==0.6',
           'pytz>=2014.4',
-          'bson==0.3.3',
+          'bson==1.1.3',
           'conmin==1.0.2',
           'newsumt==1.1.1',
           'cobyla==1.0.2',
-          'slsqp==1.0.2',
+          'slsqp==1.0.1',
           'numpy',
           'scipy>=0.11.0',
           ],
@@ -86,6 +86,9 @@ Component, Driver, Variable and other plugins for oottaDAO
       oottadao.lib.geometry.box.BoxParametricGeometry = oottadao.lib.components.box:BoxParametricGeometry
       oottadao.lib.components.multi_metamodel.MultiFiMetaModel = oottadao.lib.components.multi_metamodel:MultiFiMetaModel
       [oottadao.surrogatemodel]
+      oottadao.lib.casehandlers.listcase.ListCaseIterator = oottadao.lib.casehandlers.listcase:ListCaseIterator
+      oottadao.lib.casehandlers.dbcase.DBCaseIterator = oottadao.lib.casehandlers.dbcase:DBCaseIterator
+      oottadao.lib.casehandlers.csvcase.CSVCaseIterator = oottadao.lib.casehandlers.csvcase:CSVCaseIterator
       oottadao.lib.surrogatemodels.kriging_surrogate.KrigingSurrogate = oottadao.lib.surrogatemodels.kriging_surrogate:KrigingSurrogate
       oottadao.lib.surrogatemodels.kriging_surrogate.FloatKrigingSurrogate = oottadao.lib.surrogatemodels.kriging_surrogate:FloatKrigingSurrogate
       oottadao.lib.surrogatemodels.multifi_cokriging_surrogate.MultiFiCoKrigingSurrogate = oottadao.lib.surrogatemodels.multifi_cokriging_surrogate:MultiFiCoKrigingSurrogate
@@ -107,9 +110,6 @@ Component, Driver, Variable and other plugins for oottaDAO
       oottadao.lib.casehandlers.jsoncase.JSONCaseRecorder = oottadao.lib.casehandlers.jsoncase:JSONCaseRecorder
       oottadao.lib.casehandlers.jsoncase.BSONCaseRecorder = oottadao.lib.casehandlers.jsoncase:BSONCaseRecorder
       [oottadao.caseiterator]
-      oottadao.lib.casehandlers.listcase.ListCaseIterator = oottadao.lib.casehandlers.listcase:ListCaseIterator
-      oottadao.lib.casehandlers.dbcase.DBCaseIterator = oottadao.lib.casehandlers.dbcase:DBCaseIterator
-      oottadao.lib.casehandlers.csvcase.CSVCaseIterator = oottadao.lib.casehandlers.csvcase:CSVCaseIterator
       oottadao.lib.casehandlers.caseset.CaseArray = oottadao.lib.casehandlers.caseset:CaseArray
       oottadao.lib.casehandlers.caseset.CaseSet = oottadao.lib.casehandlers.caseset:CaseSet
       [oottadao.casefilter]
