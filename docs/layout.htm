@@ -1,0 +1,13 @@
+{% extends "basic/layout.html" %}
+
+{% block rootrellink %}
+  <li><a href="http://oottaoo.org">ootta Home</a>{{ reldelim1 }}</li>
+  {{ super() }}
+{% endblock %}
+
+{% block sidebarlogo %}
+<a href="http://oottadao.org">
+ <img src="{{ pathto("_static/ootta_Logo_200w_padded.png", 1) }}"
+border="0" alt="ootta Home"/>
+</a>
+{% endblock %}
