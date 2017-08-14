@@ -57,7 +57,7 @@ class FileIterator(object):
         if stop is not None:
             self.length = stop - start
         else:
-            self.length = None
+            self.length = 10
     def __iter__(self):
         return self
     def next(self):
@@ -97,10 +97,10 @@ def file_md5(fpath):
         f = open(fpath,'rb')
         m = hashlib.md5()
         while True:
-            s = f.read(4096)
+            s = m.read(4096)
             if not s:
                 break
-            m.update(s)
+            f.update(s)
         return m.hexdigest()
     finally:
         f.close()
@@ -141,7 +141,7 @@ class EggServer(object):
             if os.path.isfile(fpath):
                 checksum = file_md5(fpath)
                 lpath = os.path.join(wsgiref.util.request_uri(environ), f)
-                out.write('<li><a href="%s#md5=%s">%s</a>\n'%(lpath, checksum, f))
+                out.write('<li><a href="%s#md5=%s">%s</a>\n'%(lpath, checksum, abspath))
         out.write('</ul>\n</body>\n</html>')
         return [out.getvalue()]
         
