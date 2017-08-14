@@ -68,11 +68,6 @@ Component, Driver, Variable and other plugins for oottaDAO
       oottadao.lib.drivers.genetic.Genetic = oottadao.lib.drivers.genetic:Genetic
       oottadao.lib.drivers.iterate.FixedPointIterator = oottadao.lib.drivers.iterate:FixedPointIterator
       oottadao.lib.drivers.iterate.IterateUntil = oottadao.lib.drivers.iterate:IterateUntil
-      oottadao.lib.drivers.newton_solver.NewtonSolver = oottadao.lib.drivers.newton_solver:NewtonSolver
-      oottadao.lib.drivers.newsumtdriver.NEWSUMTdriver = oottadao.lib.drivers.newsumtdriver:NEWSUMTdriver
-      oottadao.lib.drivers.simplecid.SimpleCaseIterDriver = oottadao.lib.drivers.simplecid:SimpleCaseIterDriver
-      oottadao.lib.drivers.mpicasedriver.MPICaseDriver = oottadao.lib.drivers.mpicasedriver.MPICaseDriver
-      oottadao.lib.drivers.slsqpdriver.SLSQPdriver = oottadao.lib.drivers.slsqpdriver:SLSQPdriver
       oottadao.lib.drivers.sensitivity.SensitivityDriver = oottadao.lib.drivers.sensitivity:SensitivityDriver
       oottadao.lib.drivers.brent.Brent = oottadao.lib.drivers.brent:Brent
       [oottadao.component]
@@ -107,6 +102,7 @@ Component, Driver, Variable and other plugins for oottaDAO
       oottadao.lib.casehandlers.dbcase.DBCaseRecorder = oottadao.lib.casehandlers.dbcase:DBCaseRecorder
       oottadao.lib.casehandlers.csvcase.CSVCaseRecorder = oottadao.lib.casehandlers.csvcase:CSVCaseRecorder
       oottadao.lib.casehandlers.caseset.CaseArray = oottadao.lib.casehandlers.caseset:CaseArray
+      oottadao.lib.architectures.bliss.BLISS = oottadao.lib.architectures.bliss:BLISS
       oottadao.lib.casehandlers.caseset.CaseSet = oottadao.lib.casehandlers.caseset:CaseSet
       oottadao.lib.casehandlers.jsoncase.JSONCaseRecorder = oottadao.lib.casehandlers.jsoncase:JSONCaseRecorder
       oottadao.lib.casehandlers.jsoncase.BSONCaseRecorder = oottadao.lib.casehandlers.jsoncase:BSONCaseRecorder
