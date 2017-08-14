@@ -28,7 +28,7 @@ def make_index():
     
     out.write('  <div id="header">\n')
     out.write('    <a id="logo" href="http://ootta.org/">\n')
-    out.write('      <img src="/chrome/site/Feb2010_oottaLogo.png" alt="ootta Logo" height="93" width="550" />\n')
+    out.write('      <img src="/chrome/site/Feb2010_oottaLogo.png" alt="ootta Logo" height="93" width="750" />\n')
     out.write('    </a>\n, <body>\n')
     out.write('  </div>\n')
     out.write('</head>\n\n')
