@@ -51,7 +51,7 @@ def make_index():
             files.append(f)
 
     for d in dirs:
-        #lpath = os.path.join(url, 'downloads', version, d)
+        #lpath = os.path.join(url, 'index.html', version, d)
         out.write('    <li><a href="%s">%s</a>\n' % (d, d))
 
     for f in files:
