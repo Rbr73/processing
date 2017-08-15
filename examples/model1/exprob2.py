@@ -67,7 +67,7 @@ class Simulation(Assembly):
         self.add('lofi_cases', CasesBuilder(LowFidelityModel(), doe_c))
         
         # MetaModel
-        self.add("meta_model", MultiFiMetaModel(params=('x', ), 
+        self.add("meta_model", MultiFiMetaModel(params=('f_x', ), 
                                                 responses=('f_x', ), nfi=self.nfi)) 
         self.meta_model.default_surrogate = self.surrogate
         self.connect('hifi_cases.x'  , 'meta_model.params.x')
@@ -123,8 +123,8 @@ if __name__ == "__main__":
     plt.plot(sim_cok.hifi_cases.x, sim_cok.hifi_cases.f_x,'ok',label="High Fi")
     plt.plot(sim_cok.lofi_cases.x, sim_cok.lofi_cases.f_x,'or',label="Low Fi")
     plt.plot(check, predicted_cok, 'g', label='Co-kriging')
-    plt.plot(check, predicted_cok + 2*sigma_cok, 'g', alpha=0.5, label='I95%')
-    plt.plot(check, predicted_cok - 2*sigma_cok, 'g', alpha=0.5)
+    plt.plot(check, predicted_cok + 2*sigma_cok, 'f', alpha=0.5, label='I95%')
+    plt.plot(check, predicted_cok - 2*sigma_cok, 'f', alpha=0.5)
     plt.fill_between(check, predicted_cok - 2*sigma_cok,
                             predicted_cok + 2*sigma_cok, facecolor='g', alpha=0.3)
     plt.plot(check, predicted_k, 'b', label='Krigring')
