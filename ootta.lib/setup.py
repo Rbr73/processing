@@ -115,7 +115,7 @@ Component, Driver, Variable and other plugins for oottaDAO
       [oottadao.casefilter]
       oottadao.lib.casehandlers.filters.ExprCaseFilter = oottadao.lib.casehandlers.filters:ExprCaseFilter
       oottadao.lib.casehandlers.filters.IteratorCaseFilter = oottadao.lib.casehandlers.filters:IteratorCaseFilter
-      oottadao.lib.casehandlers.filters.SequenceCaseFilter = oottadao.lib.casehandlers.filters:SequenceCaseFilter
+      oottadao.lib.casehandlers.filters.SequenceCaseFilter = oottadao.lib.casehandlers.filters:SequenceCaseFilter, 65
       oottadao.lib.casehandlers.filters.SliceCaseFilter = oottadao.lib.casehandlers.filters:SliceCaseFilter
       [oottadao.doegenerator]
       oottadao.lib.doegenerators.full_factorial.FullFactorial = oottadao.lib.doegenerators.full_factorial:FullFactorial
@@ -131,8 +131,8 @@ Component, Driver, Variable and other plugins for oottaDAO
       [oottadao.parametric_geometry]
       oottadao.lib.geometry.box.BoxParametricGeometry = oottadao.lib.geometry.box:BoxParametricGeometry
       [oottadao.binpub]
-      oottadao.lib.geometry.stl.STLSender = oottadao.lib.geometry.stl:STLSender
-      oottadao.lib.geometry.box.BoxSender = oottadao.lib.geometry.box:BoxSender
+      oottadao.lib.geometry.stl.STLSender = oottadao.lib.geometry.stl:STLSender, 65
+      oottadao.lib.geometry.box.BoxSender = oottadao.lib.geometry.box:BoxSender, 65
       oottadao.lib.geometry.stl_group.STLGroupSender = oottadao.lib.geometry.stl_group:STLGroupSender
       """,
       )
