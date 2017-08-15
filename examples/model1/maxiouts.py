@@ -55,7 +55,7 @@ class Simulation(Assembly):
         self.DOE_Validate.add_parameter(("trig_meta_model.x", "trig_calc.x"),
                                         low=0, high=20)
         self.DOE_Validate.add_response("trig_calc.f_x_sin")
-        self.DOE_Validate.add_response("trig_calc.f_x_cos")
+        self.DOE_Validate.add_response("trig_calc.f_x_tan")
         self.DOE_Validate.add_response("trig_meta_model.f_x_sin")
         self.DOE_Validate.add_response("trig_meta_model.f_x_cos")
 
