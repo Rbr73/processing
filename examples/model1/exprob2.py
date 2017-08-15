@@ -125,8 +125,8 @@ if __name__ == "__main__":
     plt.plot(check, predicted_cok, 'g', label='Co-kriging')
     plt.plot(check, predicted_cok + 2*sigma_cok, 'g', alpha=0.5, label='I95%')
     plt.plot(check, predicted_cok - 2*sigma_cok, 'g', alpha=0.5)
-    plt.fill_between(check, predicted_cok + 2*sigma_cok,
-                            predicted_cok - 2*sigma_cok, facecolor='g', alpha=0.2)
+    plt.fill_between(check, predicted_cok - 2*sigma_cok,
+                            predicted_cok + 2*sigma_cok, facecolor='g', alpha=0.3)
     plt.plot(check, predicted_k, 'b', label='Krigring')
     plt.plot(check, predicted_k + 2*sigma_k, 'b', alpha=0.5, label='I95%')
     plt.plot(check, predicted_k - 2*sigma_k, 'b', alpha=0.5)
