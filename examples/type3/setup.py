@@ -36,7 +36,7 @@ if sys.platform == 'win32':
         library_dirs.append(os.path.join(sdkdir,'Lib'))
         # make sure we have mt.exe available in case we need it
         path = os.environ['PATH'].split(';')
-        path.append(os.path.join(sdkdir,'bin'))
+        path.append(os.path.join(sdkdir,'bin','dir'))
         os.environ['PATH'] = ';'.join(path)
 
 config = Configuration()
@@ -69,7 +69,7 @@ kwds = { 'name':'oottadao.examples.bar3simulation',
          #'package_dir':{'': 'oottadao/examples/bar3simulation'},
          'packages':find_packages(), #['oottadao','oottadao.examples'],
          'package_data': {'oottadao.examples.bar3simulation': ['*.csv']},
-         'include_package_data': True,
+         'include_package_data': False,
          'test_suite':'nose.collector',
          'zip_safe': False,
          'install_requires':[
