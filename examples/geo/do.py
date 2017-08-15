@@ -20,8 +20,8 @@ class Analysis(Assembly):
         self.driver.DOEgenerator = Uniform(1000) 
 
         #DOEdriver will automatically record the values of any parameters for each case
-        self.driver.add_parameter('paraboloid.x', low=-50, high=50)
-        self.driver.add_parameter('paraboloid.y', low=-50, high=50)
+        self.driver.add_parameter('paraboloid.x', low=-50, high=200)
+        self.driver.add_parameter('paraboloid.y', low=-50, high=200)
         #tell the DOEdriver to also record any other variables you want to know for each case
         self.driver.add_response('paraboloid.f_xy')
 
