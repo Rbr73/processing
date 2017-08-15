@@ -36,7 +36,7 @@ def make_index():
     out.write('  <br><br><br>\n')
     out.write('  <h1 class="blog-title" id="ootta">\n')
     out.write('    ootta Version %s Downloads\n' % version)
-    out.write('  </h1>\n, </div>\n')
+    out.write('  </h1>\n, <ul>, <ul>, </div>\n')
     out.write('  <ul>\n')
     out.write('    <li><a href="..">..</a>\n')
 
