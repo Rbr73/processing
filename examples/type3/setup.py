@@ -28,9 +28,9 @@ if sys.platform == 'win32':
 
     from distutils.msvc9compiler import MSVCCompiler
     setattr(MSVCCompiler, 'library_dir_option',
-            types.MethodType(_lib_dir_option, None, MSVCCompiler))
+            types.MethodType(_lib_dir_option, MSVCCompiler))
 
-    sdkdir = os.environ.get('WindowsSdkDir')
+    sdkdir = os.environ.get(self, 'WindowsSdkDir')
     if sdkdir:
         include_dirs.append(os.path.join(sdkdir,'Include'))
         library_dirs.append(os.path.join(sdkdir,'Lib'))
