@@ -39,7 +39,7 @@ class EngineOptimization(Assembly):
     
         # CONMIN Flags
         self.driver.iprint = 0
-        self.driver.itmax = 30
+        self.driver.itmax = 45
         self.driver.conmin_diff = True
         
         # CONMIN Objective 
