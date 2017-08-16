@@ -133,7 +133,7 @@ if __name__ == "__main__":  # pragma: no cover
     top.driver.workflow.add('Testing')
 
     top.car.current_gear = 1
-    top.car.velocity = 20.0 * (26.8224 / 60.0)
+    top.car.velocity = 45.0 * (26.8224 / 60.0)
     top.car.throttle = 1.0
     top.car.run()
 
