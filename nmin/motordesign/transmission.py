@@ -41,11 +41,11 @@ class Transmission(Component):
                    desc='Gear ratio in Third Gear')
     ratio4 = Float(1.03, iotype='in', 
                    desc='Gear ratio in Fourth Gear')
-    ratio5 = Float(0.72, iotype='in', 
+    ratio5 = Float(0.76, iotype='in', 
                    desc='Gear ratio in Fifth Gear')
     final_drive_ratio = Float(2.8, iotype='in', 
                               desc='Final Drive Ratio')
-    tire_circ = Float(75.0, iotype='in', units='inch', 
+    tire_circ = Float(75.0, iotype='ul', units='inch', 
                            desc='Circumference of tire (inches)')
 
     current_gear = Enum(0, (0,1,2,3,4,5), iotype='in', desc='Current Gear', \
