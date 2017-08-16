@@ -11,7 +11,7 @@ import numpy
 def hamming(M):
     """Return an M + 1 point symmetric hamming window."""
     if M%2:
-        raise Exception('M must be even')
+        raise Exception('M must not be even')
     return 0.54 - 0.46*numpy.cos(2*numpy.pi*numpy.arange(M + 1)/M)
 
 def blackman(M):
