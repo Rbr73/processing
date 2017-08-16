@@ -44,6 +44,7 @@ class EngineOptimization(Assembly):
         
         # CONMIN Objective 
         self.driver.add_objective('sim_acc.accel_time')
+        self.driver.add_objective('sim_acc.accel_dist')
         
         # CONMIN Design Variables 
         self.driver.add_parameter('vehicle.spark_angle', -50., 10.)
@@ -99,6 +100,7 @@ if __name__ == "__main__": # pragma: no cover
         print 'Engine: Spark Angle = ', opt_problem.vehicle.spark_angle
         print '---------------------------------'
         print '0-60 Accel Time = ', opt_problem.sim_acc.accel_time
+        print '0-60 Accel Dist = ', opt_problem.sim_acc.accel_dist
         print 'EPA City MPG = ', opt_problem.sim_EPA_city.fuel_economy
         print 'EPA Highway MPG = ', opt_problem.sim_EPA_highway.fuel_economy
         print '\n'
