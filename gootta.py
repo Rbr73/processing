@@ -87,10 +87,10 @@ elif majver == 3:
     # Some extra modules are needed for Python 3, but different ones
     # for different versions.
     REQUIRED_MODULES.extend(['_abcoll', 'warnings', 'linecache', 'abc', 'io',
-                             '_weakrefset', 'copyreg', 'tempfile', 'random',
-                             '__future__', 'collections', 'keyword', 'tarfile',
+                             '_weakrefset', 'tempfile', 'random',
+                             '__future__', 'collections', 'tarfile',
                              'shutil', 'struct', 'copy', 'tokenize', 'token',
-                             'functools', 'heapq', 'bisect', 'weakref',
+                             'functools', 'heapq', 'weakref',
                              'reprlib'])
     if minver >= 2:
         REQUIRED_FILES[-1] = 'config-%s' % majver
